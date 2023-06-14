@@ -1,3 +1,15 @@
 import { Route } from '@angular/router';
 
-export const appRoutes: Route[] = [];
+const appRoutes: Route[] = [
+  {
+    path: 'tabs',
+    loadChildren: () => import('./tabs/tabs.routes'),
+  },
+  {
+    path: '',
+    redirectTo: '/tabs/tab1',
+    pathMatch: 'full',
+  },
+];
+
+export default appRoutes;
