@@ -7,7 +7,7 @@ const appRoutes: Route[] = [
   },
   {
     path: '',
-    redirectTo: '/tabs/tab1',
+    redirectTo: '/tabs/students',
     pathMatch: 'full',
   },
 ];

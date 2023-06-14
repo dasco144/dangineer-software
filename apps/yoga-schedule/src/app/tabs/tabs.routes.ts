@@ -7,8 +7,8 @@ const tabRoutes: Routes = [
     component: TabsPage,
     children: [
       {
-        path: 'tab1',
-        loadComponent: () => import('../tab1/tab1.page'),
+        path: 'students',
+        loadComponent: () => import('../students/students.page'),
       },
     ],
   },
