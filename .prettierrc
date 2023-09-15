@@ -1,3 +1,11 @@
 {
-  "singleQuote": true
+  "singleQuote": true,
+  "overrides": [
+    {
+      "files": "{apps,libs}/**/*.page.html",
+      "options": {
+        "parser": "angular"
+      }
+    }
+  ]
 }
