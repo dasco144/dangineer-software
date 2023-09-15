@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "yoga-schedule-fd388": {
+      "hosting": {
+        "yoga-schedule": [
+          "yoga-schedule-fd388"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "yoga-schedule-fd388"
+  }
+}
