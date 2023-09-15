@@ -1,4 +1,4 @@
 {
-  "*.ts": "eslint --fix",
+  "*.(ts|html)": "eslint --fix",
   "*": "nx format:write"
 }
