@@ -1,4 +1,4 @@
-import { NgFor } from '@angular/common';
+
 import { Component, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
@@ -14,7 +14,7 @@ export interface Tab {
   selector: 'dangineer-software-root',
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.scss'],
-  imports: [IonicModule, NgFor, RouterLink],
+  imports: [IonicModule, RouterLink],
   standalone: true,
 })
 export class AppComponent {
