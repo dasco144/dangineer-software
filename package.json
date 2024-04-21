@@ -10,6 +10,10 @@
     "prepare": "husky install"
   },
   "private": true,
+  "overrides": {
+    "@nx/angular": "18.3.3",
+    "@nx/eslint": "18.3.3"
+  },
   "devDependencies": {
     "@angular-devkit/build-angular": "17.3.5",
     "@angular-devkit/core": "17.3.5",
