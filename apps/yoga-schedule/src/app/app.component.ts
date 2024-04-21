@@ -1,4 +1,3 @@
-
 import { Component, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
