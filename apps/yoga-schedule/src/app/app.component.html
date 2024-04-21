@@ -1,3 +1,23 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-header [translucent]="true">
+    <ion-toolbar>
+      <ion-title size="large"> {{ pageLabel() }} </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content class="ion-padding">
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button
+          *ngFor="let tab of tabs()"
+          [tab]="tab.name"
+          [routerLink]="tab.url"
+          (ionSelect)="pageLabel.set(tab.label)"
+        >
+          <ion-icon aria-hidden="true" [name]="tab.icon" />
+          <ion-label>{{ tab.label }}</ion-label>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+  </ion-content>
 </ion-app>
