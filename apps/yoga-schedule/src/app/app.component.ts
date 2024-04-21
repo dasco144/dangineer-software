@@ -1,6 +1,17 @@
 import { Component, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { IonicModule } from '@ionic/angular';
+import {
+  IonApp,
+  IonContent,
+  IonHeader,
+  IonIcon,
+  IonLabel,
+  IonTabBar,
+  IonTabButton,
+  IonTabs,
+  IonTitle,
+  IonToolbar,
+} from '@ionic/angular/standalone';
 
 export interface Tab {
   name: string;
@@ -13,7 +24,19 @@ export interface Tab {
   selector: 'dangineer-software-root',
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.scss'],
-  imports: [IonicModule, RouterLink],
+  imports: [
+    IonApp,
+    IonContent,
+    IonHeader,
+    IonIcon,
+    IonLabel,
+    IonTabBar,
+    IonTabButton,
+    IonTabs,
+    IonToolbar,
+    IonTitle,
+    RouterLink,
+  ],
   standalone: true,
 })
 export class AppComponent {
