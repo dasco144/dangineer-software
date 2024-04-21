@@ -1,7 +1,7 @@
 import { AsyncPipe } from '@angular/common';
 import { Component, TrackByFunction } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { IonicModule } from '@ionic/angular';
+import { IonItem, IonLabel, IonList } from '@ionic/angular/standalone';
 import { of } from 'rxjs';
 
 export interface Student {
@@ -26,7 +26,7 @@ export type StudentWithAttendanceInfo = Student &
   selector: 'dangineer-software-students',
   templateUrl: 'students.page.html',
   styleUrls: ['students.page.scss'],
-  imports: [AsyncPipe, IonicModule, RouterLink],
+  imports: [AsyncPipe, IonList, IonLabel, IonItem, RouterLink],
   standalone: true,
 })
 export default class StudentsPage {
