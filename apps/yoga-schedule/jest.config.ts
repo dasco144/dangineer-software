@@ -3,7 +3,6 @@ export default {
   displayName: 'yoga-schedule',
   preset: '../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
-  coverageDirectory: '../../coverage/apps/yoga-schedule',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',
