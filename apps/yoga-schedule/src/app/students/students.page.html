@@ -1,15 +1,18 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title> Students </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Students</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  Students
-</ion-content>
+<section class="students-section">
+  <ion-list>
+    <ion-item
+      *ngFor="let student of students$ | async; trackBy: studentById"
+      [routerLink]="['/students', student.id]"
+    >
+      <!-- <ion-avatar slot="start">
+          <img [src]="student.avatar" />
+        </ion-avatar> -->
+      <ion-label>
+        <p>{{ student.name }} {{ student.surname }}</p>
+        <p>{{ student.notes }}</p>
+        <h2>Classes:</h2>
+        <p>{{ student.classesAttended }}/{{ student.classesAvailable }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</section>
