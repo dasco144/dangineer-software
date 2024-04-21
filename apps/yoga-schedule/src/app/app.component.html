@@ -8,8 +8,8 @@
   <ion-content class="ion-padding">
     <ion-tabs>
       <ion-tab-bar slot="bottom">
+        @for (tab of tabs(); track tab.name) {
         <ion-tab-button
-          *ngFor="let tab of tabs()"
           [tab]="tab.name"
           [routerLink]="tab.url"
           (ionSelect)="pageLabel.set(tab.label)"
@@ -17,6 +17,7 @@
           <ion-icon aria-hidden="true" [name]="tab.icon" />
           <ion-label>{{ tab.label }}</ion-label>
         </ion-tab-button>
+        }
       </ion-tab-bar>
     </ion-tabs>
   </ion-content>

@@ -1,12 +1,10 @@
 <section class="students-section">
   <ion-list>
-    <ion-item
-      *ngFor="let student of students$ | async; trackBy: studentById"
-      [routerLink]="['/students', student.id]"
-    >
+    @for (student of students$ | async; track student.id) {
+    <ion-item [routerLink]="['/students', student.id]">
       <!-- <ion-avatar slot="start">
-          <img [src]="student.avatar" />
-        </ion-avatar> -->
+        <img [src]="student.avatar" />
+      </ion-avatar> -->
       <ion-label>
         <p>{{ student.name }} {{ student.surname }}</p>
         <p>{{ student.notes }}</p>
@@ -14,5 +12,6 @@
         <p>{{ student.classesAttended }}/{{ student.classesAvailable }}</p>
       </ion-label>
     </ion-item>
+    }
   </ion-list>
 </section>
