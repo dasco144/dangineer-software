@@ -8,5 +8,9 @@
     "revealOn": "run",
     "revealWithFocus": "none",
     "clearOnRun": "none"
-  }
+  },
+  "search.exclude": {
+    "**/.yarn": true,
+    "**/.pnp.*": true
+  },
 }
