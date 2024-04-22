@@ -19,11 +19,8 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 20
-          cache: 'npm'
-      - run: npm ci
+      - uses: volta-cli/action@v4.1.1
+      - run: yarn install
       - uses: nrwl/nx-set-shas@v3
 
       - run: git branch --track main origin/main
