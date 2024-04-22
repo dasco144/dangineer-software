@@ -7,12 +7,12 @@
   "tags": [],
   "targets": {
     "build": {
-      "executor": "@angular-devkit/build-angular:browser",
+      "executor": "@nx/angular:application",
       "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/apps/yoga-schedule",
         "index": "apps/yoga-schedule/src/index.html",
-        "main": "apps/yoga-schedule/src/main.ts",
+        "browser": "apps/yoga-schedule/src/main.ts",
         "polyfills": ["zone.js"],
         "tsConfig": "apps/yoga-schedule/tsconfig.app.json",
         "assets": ["apps/yoga-schedule/src/assets"],
@@ -41,9 +41,7 @@
           "outputHashing": "all"
         },
         "development": {
-          "buildOptimizer": false,
           "optimization": false,
-          "vendorChunk": true,
           "extractLicenses": false,
           "sourceMap": true,
           "namedChunks": true
@@ -52,7 +50,7 @@
       "defaultConfiguration": "production"
     },
     "serve": {
-      "executor": "@angular-devkit/build-angular:dev-server",
+      "executor": "@nx/angular:dev-server",
       "configurations": {
         "production": {
           "buildTarget": "yoga-schedule:build:production"
