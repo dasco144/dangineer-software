@@ -9,6 +9,7 @@
     "revealWithFocus": "none",
     "clearOnRun": "none"
   },
+  "jest.runMode": "on-demand",
   "search.exclude": {
     "**/.yarn": true,
     "**/.pnp.*": true
