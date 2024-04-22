@@ -15,9 +15,7 @@
         "main": "apps/yoga-schedule/src/main.ts",
         "polyfills": ["zone.js"],
         "tsConfig": "apps/yoga-schedule/tsconfig.app.json",
-        "assets": [
-          "apps/yoga-schedule/src/assets"
-        ],
+        "assets": ["apps/yoga-schedule/src/assets"],
         "styles": [
           "apps/yoga-schedule/src/styles.scss",
           {
