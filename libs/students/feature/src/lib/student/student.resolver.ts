@@ -1,6 +1,6 @@
 import { ResolveFn } from '@angular/router';
-import { StudentWithAttendanceInfo } from '../students.page';
 import { of } from 'rxjs';
+import { StudentWithAttendanceInfo } from '../interfaces';
 
 export const studentResolver: ResolveFn<StudentWithAttendanceInfo> = (
   _snapshot,

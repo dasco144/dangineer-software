@@ -3,7 +3,7 @@ import { Route } from '@angular/router';
 const appRoutes: Route[] = [
   {
     path: 'students',
-    loadChildren: () => import('./students/students.routes'),
+    loadChildren: () => import('@dangineer-software/students'),
   },
   {
     path: 'calendar',
