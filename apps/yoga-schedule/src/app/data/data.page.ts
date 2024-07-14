@@ -1,12 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'dangineer-software-data',
+  selector: 'dgs-data',
   templateUrl: './data.page.html',
   styleUrls: ['./data.page.scss'],
   standalone: true,
   imports: [],
 })
-export default class DataPage {
-  constructor() {}
-}
+export default class DataPage {}

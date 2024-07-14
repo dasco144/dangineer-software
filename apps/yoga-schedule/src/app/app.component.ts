@@ -13,6 +13,20 @@ import {
   IonTitle,
   IonToolbar,
 } from '@ionic/angular/standalone';
+import { addIcons } from 'ionicons';
+import {
+  peopleOutline,
+  calendarOutline,
+  bookOutline,
+  barChartOutline,
+} from 'ionicons/icons';
+
+addIcons({
+  peopleOutline,
+  calendarOutline,
+  bookOutline,
+  barChartOutline,
+});
 
 export interface Tab {
   name: string;
@@ -22,7 +36,7 @@ export interface Tab {
 }
 
 @Component({
-  selector: 'dangineer-software-root',
+  selector: 'dgs-root',
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.scss'],
   imports: [
