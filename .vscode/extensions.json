@@ -4,6 +4,7 @@
     "esbenp.prettier-vscode",
     "dbaeumer.vscode-eslint",
     "orta.vscode-jest",
-    "arcanis.vscode-zipfs"
+    "arcanis.vscode-zipfs",
+    "firsttris.vscode-jest-runner"
   ]
 }
