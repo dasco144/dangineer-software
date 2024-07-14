@@ -9,7 +9,7 @@
           "error",
           {
             "type": "attribute",
-            "prefix": "dangineerSoftware",
+            "prefix": "dgs",
             "style": "camelCase"
           }
         ],
@@ -17,7 +17,7 @@
           "error",
           {
             "type": "element",
-            "prefix": "dangineer-software",
+            "prefix": "dgs",
             "style": "kebab-case"
           }
         ],
@@ -26,9 +26,7 @@
           {
             "suffixes": ["Page", "Component"]
           }
-        ],
-        "@angular-eslint/no-empty-lifecycle-method": 0,
-        "@typescript-eslint/no-empty-function": 0
+        ]
       },
       "extends": [
         "plugin:@nx/angular",
