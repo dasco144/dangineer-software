@@ -16,7 +16,9 @@
     "baseUrl": ".",
     "noUncheckedIndexedAccess": true,
     "allowSyntheticDefaultImports": true,
-    "paths": {}
+    "paths": {
+      "@dangineer-software/students": ["libs/students/feature/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { filter, map } from 'rxjs';
-import { StudentWithAttendanceInfo } from '../students.page';
 import { AsyncPipe, JsonPipe } from '@angular/common';
+import { StudentWithAttendanceInfo } from '../interfaces';
 
 @Component({
-  selector: 'dangineer-software-student',
+  selector: 'dgs-student',
   templateUrl: './student.page.html',
   styleUrls: ['./student.page.scss'],
   imports: [AsyncPipe, JsonPipe],
